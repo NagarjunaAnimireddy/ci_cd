@@ -1,5 +1,5 @@
 langchain
-langchain_classic
+#langchain_classic
 langchain_openai
 streamlit
 python-dotenv
