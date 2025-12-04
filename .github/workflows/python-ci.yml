@@ -1,4 +1,4 @@
-The issue is with the indentation of the `name: Lint with flake8` step. It should be at the same level as the other steps. Here is the corrected YAML:
+The issue is with the indentation of the `- name: Lint with flake8` line. It should be aligned with the `- name: Install dependencies` line. Here is the corrected YAML:
 
 name: Python application
 
@@ -9,13 +9,12 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
 
-    - name: Set up Python 3.8
+    - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
@@ -41,4 +40,4 @@ jobs:
       run: |
         echo "Deploying application..."
 
-This should now conform to the schema and run without issues.
+This workflow will be triggered every time you push to the main branch. It will setup Python, install dependencies, lint your code using flake8, run tests using pytest, and finally, it will print "Deploying application..." to simulate a deployment step.
