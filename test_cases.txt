@@ -1,0 +1,65 @@
+    Functional test cases:
+
+    ```
+    Test Case ID: TC-001
+    Description: Verify that users can log in with valid credentials
+    Steps:
+    1. Open the login page
+    2. Enter valid email and password
+    3. Click on the Login button
+    Expected Result: User is redirected to the dashboard
+    ```
+
+    ```
+    Test Case ID: TC-002
+    Description: Verify that an error message is displayed when entered credentials are invalid
+    Steps:
+    1. Open the login page
+    2. Enter an invalid email or password
+    3. Click on the Login button
+    Expected Result: An error message is displayed
+    ```
+
+    Edge cases:
+
+    ```
+    Test Case ID: TC-003
+    Description: Verify that the user can log in with the maximum limit of characters in the email
+    Steps:
+    1. Open the login page
+    2. Enter an email with the maximum limit of characters and a valid password
+    3. Click on the Login button
+    Expected Result: User is redirected to the dashboard
+    ```
+
+    ```
+    Test Case ID: TC-004
+    Description: Verify the login functionality where only spaces are entered as credentials
+    Steps:
+    1. Open the login page
+    2. Enter spaces in email and password fields
+    3. Click on the Login button
+    Expected Result: An error message is displayed
+    ```
+
+    Negative test cases:
+
+    ```
+    Test Case ID: TC-005
+    Description: Verify the login functionality when the password field is left empty
+    Steps:
+    1. Open the login page
+    2. Enter a valid email and leave the password field empty
+    3. Click on the Login button
+    Expected Result: An error message is displayed
+    ```
+
+    ```
+    Test Case ID: TC-006
+    Description: Verify the login functionality when the email field is left empty
+    Steps:
+    1. Open the login page
+    2. Leave the email field empty and enter a valid password
+    3. Click on the Login button
+    Expected Result: An error message is displayed
+    ```

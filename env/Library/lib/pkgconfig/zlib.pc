@@ -1,0 +1,13 @@
+prefix=D:/GenAIProjects/env/Library
+exec_prefix=D:/GenAIProjects/env/Library
+libdir=D:/GenAIProjects/env/Library/lib
+sharedlibdir=D:/GenAIProjects/env/Library/lib
+includedir=D:/GenAIProjects/env/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.3.1
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
